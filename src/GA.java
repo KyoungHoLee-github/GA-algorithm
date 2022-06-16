@@ -58,7 +58,7 @@ public class GA {
 
         int assumeA = 0;
         //오차값
-        for (int i = 0; i < 20; i++){
+        while(Math.abs(a - assumeA) > 0.5){
             ++ga_a.generationCount;
 
             ga_a.selection();
